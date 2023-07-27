@@ -8,7 +8,7 @@ describe('Тестирование staya', function () {
         cy.end();
          })
 
-     it('search ', function () {
+     it('search ? ', function () {
         cy.visit('https://staya.dog/');
         })
 })
