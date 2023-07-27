@@ -10,7 +10,7 @@ describe('Тестирование формы логина', function () {
     })
 })
 describe('Тестирование логики восстановления пароля', function () {
-   it('Ввести mail и нажать кнопку восстановить пароль', function () {
+   it('Ввести @mail и нажать кнопку восстановить пароль', function () {
         cy.visit('https://login.qa.studio/');
         cy.get('#forgotEmailButton').click();
         cy.get('#mailForgot').type('romkyd@bk.ru');
@@ -29,7 +29,7 @@ describe('№1 Негативный кейс авторизации', function (
         cy.get('#exitMessageButton > .exitIcon').should('be.visible');
     })
 })
-describe('№2 Негативный кейс авторизации', function () {
+describe('№2 Негативный кейс для  авторизации', function () {
    it('Ввести не верный логин и верный пароль', function () {
         cy.visit('https://login.qa.studio/');
         cy.get('#mail').type('zhopa@.gorit.ru');
